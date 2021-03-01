@@ -11,3 +11,5 @@ OS Support: MacOS Mojave and newer (Catalina Working ).
 Everything works except brightness hotkey (use Fn + S and Fn + B to change brightness ).
 
 If you have problems with audio, use ALCPlugFix.  
+
+This EFI is only for Dell Inspiron 14 - 3467, if you are using dell laptop with the same specs, to the following [this](https://dortania.github.io/OpenCore-Post-Install/usb/) guide to repatch USB Port.
