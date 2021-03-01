@@ -16,4 +16,4 @@ If you have problems with audio, use ALCPlugFix.
 
 This EFI is only for Dell Inspiron 14 - 3467, if you are using dell laptop with the same specs, to the following [this](https://dortania.github.io/OpenCore-Post-Install/usb/) guide to repatch USB Port.
 
-* You might also want to patch Battery Indicator as this device doesn't need to patch.
+* You might also want to patch Battery [here](https://dortania.github.io/OpenCore-Post-Install/laptop-specific/battery.html#dsdt-patching) as this device doesn't need to patch.
