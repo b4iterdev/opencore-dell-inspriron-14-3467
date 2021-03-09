@@ -5,6 +5,9 @@ OpenCore EFI for Dell Inspriron 14 3467 (Intel Core i5-7200U - HD620)
 | RAM | 4GB-DDR4              |
 | GPU | Intel HD 620 ~ 1500MB Vram|
 | Audio | Realtek ALC-256 (layout-id=11) |
+
+![Screen Shot 2021-03-09 at 1 06 15 PM](https://user-images.githubusercontent.com/57698887/110426230-50186780-80d8-11eb-91bb-45d2d78e5b6e.png)
+
 # Notes:
 OS Support: MacOS Mojave and newer (Catalina Working ). In the future I will continue maintaining this EFI.
 
