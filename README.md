@@ -10,10 +10,17 @@ OS Support: MacOS Mojave and newer (Catalina Working ). In the future I will con
 
 At the moment I'm using HDD 5400rpm which is really slow, so until I have a new SSD I won't upgrade to BigSur.
 
-Everything works except brightness hotkey (use Fn + S and Fn + B to change brightness ).
+Everything works except brightness hotkey (use Fn + S and Fn + B to change brightness, in VoodooPS2Controller brightness keys are f13 and f14).
 
-If you have problems with audio, use ALCPlugFix.  
+If you have problems with audio, use ~~ALCPlugFix~~. Instead use ComboJack.
 
 This EFI is only for Dell Inspiron 14 - 3467, if you are using dell laptop with the same specs, to the following [this](https://dortania.github.io/OpenCore-Post-Install/usb/) guide to repatch USB Port.
 
 * You might also want to patch Battery [here](https://dortania.github.io/OpenCore-Post-Install/laptop-specific/battery.html#dsdt-patching) as this device doesn't need to patch.
+
+# How to install ComboJack or ALCPlugFix. 
+
+* First, you need to disable SIP: goto Recovery OS -> open Terminal and type ``` csrutil disable ``` (you can re-enable SIP after successfully install.
+* Next, reboot into macOS and type this into terminal ``` sudo mount -uw / ``` . 
+* Then, run install.sh by navigating these folder from terminal, then type ``` bash install.sh ``` . 
+* Finally, re-cache kext by typing this into terminal ``` kextcache -i / ```
