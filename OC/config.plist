@@ -49,18 +49,18 @@
 			<dict>
 				<key>Comment</key>
 				<string>SSDT-EC-USBX.aml</string>
-				<key>Path</key>
-				<string>SSDT-EC-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-EC-USBX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>SSDT-UIAC.aml</string>
-				<key>Path</key>
-				<string>SSDT-UIAC.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-UIAC.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -359,10 +359,10 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
-				<data>AQAAAA==</data>
+				<data>CwAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -604,24 +604,26 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string></string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>USBPorts.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
 				<key>Comment</key>
@@ -630,8 +632,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Controller</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -640,6 +640,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
 				<key>Comment</key>
@@ -648,8 +650,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooInput</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -658,6 +658,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
 				<key>Comment</key>
@@ -666,8 +668,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Keyboard</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -676,6 +676,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
 				<key>Comment</key>
@@ -684,8 +686,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Mouse</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -694,6 +694,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
 				<key>Comment</key>
@@ -702,14 +704,30 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Trackpad</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VerbStub</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VerbStub.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -1058,9 +1076,9 @@
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
-			<false/>
+			<true/>
 			<key>TakeoffDelay</key>
-			<integer>0</integer>
+			<integer>3</integer>
 			<key>Timeout</key>
 			<integer>5</integer>
 		</dict>
@@ -1148,6 +1166,24 @@
 				<string>OpenShell.efi</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>CleanNvram.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>CleanNvram.efi</string>
+				<key>Path</key>
+				<string>CleanNvram.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1307,6 +1343,8 @@
 			<integer>20</integer>
 			<key>PlayChime</key>
 			<string>Auto</string>
+			<key>ResetTrafficClass</key>
+			<false/>
 			<key>SetupDelay</key>
 			<integer>0</integer>
 			<key>VolumeAmplifier</key>
@@ -1326,8 +1364,6 @@
 			<false/>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
-			<key>KeyMergeThreshold</key>
-			<integer>2</integer>
 			<key>KeySupport</key>
 			<true/>
 			<key>KeySupportMode</key>
@@ -1350,6 +1386,8 @@
 			<key>DirectGopRendering</key>
 			<false/>
 			<key>ForceResolution</key>
+			<false/>
+			<key>GopPassThrough</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
@@ -1409,6 +1447,8 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>ActivateHpetSupport</key>
+			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
 			<key>ExitBootServicesDelay</key>
