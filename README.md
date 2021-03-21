@@ -9,7 +9,7 @@ OpenCore EFI for Dell Inspriron 14 3467 (Intel Core i5-7200U - HD620)
 ![Screen Shot 2021-03-09 at 1 06 15 PM](https://user-images.githubusercontent.com/57698887/110426230-50186780-80d8-11eb-91bb-45d2d78e5b6e.png)
 
 # Notes:
-OS Support: MacOS Mojave and newer (Catalina Working ). In the future I will continue maintaining this EFI.
+OS Support: MacOS HighSierra and newer (Catalina,Mojave Working ). In the future I will continue maintaining this EFI.
 
 At the moment I'm using HDD 5400rpm which is really slow, so until I have a new SSD I won't upgrade to BigSur.
 
@@ -20,6 +20,10 @@ If you have problems with audio, use ~~ALCPlugFix~~. Instead use ComboJack.
 This EFI is only for Dell Inspiron 14 - 3467, if you are using dell laptop with the same specs, to the following [this](https://dortania.github.io/OpenCore-Post-Install/usb/) guide to repatch USB Port.
 
 * You might also want to patch Battery [here](https://dortania.github.io/OpenCore-Post-Install/laptop-specific/battery.html#dsdt-patching) as this device doesn't need to patch.
+
+# For HighSierra user:
+
+For Opencore 0.6.7, macOS might not boot if you have AppleSecureBoot enabled as HighSierra is now old, so you might want to disable by going to Mics -> SecureBootModel -> Disabled
 
 # How to install ComboJack or ALCPlugFix. 
 
