@@ -11,6 +11,8 @@ OpenCore EFI for Dell Inspriron 14 3467 (Intel Core i5-7200U - HD620)
 # Notes:
 OS Support: MacOS HighSierra and newer (Catalina,Mojave Working ). In the future I will continue maintaining this EFI.
 
+Before using this efi, go [here](https://github.com/OpenIntelWireless/itlwm/releases/) and download appropriate AirportItlwm.kext with your macOS version to /OC/Kexts (you don't need to re-snapshot the config as AirportItlwm are included).
+
 At the moment I'm using HDD 5400rpm which is really slow, so until I have a new SSD I won't upgrade to BigSur.
 
 Everything works except brightness hotkey (use Fn + S and Fn + B to change brightness, in VoodooPS2Controller brightness keys are f13 and f14).
