@@ -121,6 +121,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -147,6 +151,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>AAAAAA==</data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -173,6 +181,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>AAAAAA==</data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -199,6 +211,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>AAAAAA==</data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -225,6 +241,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>AAAAAA==</data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -251,6 +271,10 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -353,6 +377,8 @@
 			<false/>
 			<key>SyncRuntimePermissions</key>
 			<false/>
+			<key>ForceBooterSignature</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -361,8 +387,10 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
+				<key>alc-delay</key>
+				<integer>500</integer>
 				<key>layout-id</key>
-				<data>CwAAAA==</data>
+				<integer>21</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -571,24 +599,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>itlwm.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/itlwm</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>RealtekRTL8100.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -728,6 +738,24 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VerbStub.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportItlwm</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AirportItlwm.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -1078,7 +1106,7 @@
 			<key>ShowPicker</key>
 			<true/>
 			<key>TakeoffDelay</key>
-			<integer>3</integer>
+			<integer>1</integer>
 			<key>Timeout</key>
 			<integer>5</integer>
 		</dict>
@@ -1212,7 +1240,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 alcid=11</string>
+				<string>keepsyms=1 debug=0x100</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1414,8 +1442,6 @@
 			<false/>
 			<key>AppleDebugLog</key>
 			<false/>
-			<key>AppleEvent</key>
-			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
 			<key>AppleImageConversion</key>
@@ -1464,33 +1490,21 @@
 			<key>UnblockFsConnect</key>
 			<false/>
 		</dict>
-		<key>ReservedMemory</key>
-		<array>
-			<dict>
-				<key>Address</key>
-				<integer>268435456</integer>
-				<key>Comment</key>
-				<string>HD3000: IGPU memory corruption errata</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Size</key>
-				<integer>268435456</integer>
-				<key>Type</key>
-				<string>Reserved</string>
-			</dict>
-			<dict>
-				<key>Address</key>
-				<integer>569344</integer>
-				<key>Comment</key>
-				<string>Fix black screen on wake from hibernation for Lenovo Thinkpad T490</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Size</key>
-				<integer>4096</integer>
-				<key>Type</key>
-				<string>RuntimeCode</string>
-			</dict>
-		</array>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Builtin</string>
+			<key>CustomDelays</key>
+			<string>Auto</string>
+			<key>KeyInitialDelay</key>
+			<integer>0</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 </dict>
 </plist>
