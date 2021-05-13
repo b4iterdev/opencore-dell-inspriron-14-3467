@@ -18,7 +18,7 @@ At the moment I'm using HDD 5400rpm which is really slow, so until I have a new 
 
 Everything works except brightness hotkey (use Fn + S and Fn + B to change brightness, in VoodooPS2Controller brightness keys are f13 and f14).
 
-~~If you have problems with audio, use ~~ALCPlugFix~~. Instead use ComboJack.~~ Audio works with layout-id 21 without any workaround
+~~If you have problems with audio, use ALCPlugFix. Instead use ComboJack~~.Audio works with layout-id 21 without any workaround
 
 This EFI is only for Dell Inspiron 14 - 3467, if you are using dell laptop with the same specs, to the following [this](https://dortania.github.io/OpenCore-Post-Install/usb/) guide to repatch USB Port.
 
@@ -27,10 +27,3 @@ This EFI is only for Dell Inspiron 14 - 3467, if you are using dell laptop with 
 # For HighSierra user:
 
 For Opencore 0.6.9, macOS might not boot if you have AppleSecureBoot enabled as HighSierra is now old, so you might want to disable by going to Mics -> SecureBootModel -> Disabled
-
-~~# How to install ComboJack or ALCPlugFix. ~~
-
-~~* First, you need to disable SIP: goto Recovery OS -> open Terminal and type ``` csrutil disable ``` (you can re-enable SIP after successfully install.~~
-~~* Next, reboot into macOS and type this into terminal ``` sudo mount -uw / ``` . ~~
-~~* Then, run install.sh by navigating these folder from terminal, then type ``` bash install.sh ``` . ~~
-~~* Finally, re-cache kext by typing this into terminal ``` kextcache -i / ```~~
