@@ -26,4 +26,4 @@ This EFI is only for Dell Inspiron 14 - 3467, if you are using dell laptop with 
 
 # For HighSierra user:
 
-For Opencore 0.6.9, macOS might not boot if you have AppleSecureBoot enabled as HighSierra is now old, so you might want to disable by going to Mics -> SecureBootModel -> Disabled
+For Opencore 0.6.9, macOS might not boot if you have AppleSecureBoot enabled with default value as HighSierra is now old, so you might want to disable by going to Mics -> SecureBootModel -> j680 [MacBookPro15,1 (July 2018)]
