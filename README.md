@@ -7,7 +7,7 @@ OpenCore EFI for Dell Inspriron 14 3467 (Intel Core i5-7200U - HD620)
 | Audio | Realtek ALC-256 (layout-id=21) |
 | Version | Opencore 0.6.9 |
 
-![Screen Shot 2021-03-09 at 1 06 15 PM](https://user-images.githubusercontent.com/57698887/110426230-50186780-80d8-11eb-91bb-45d2d78e5b6e.png)
+![image](https://user-images.githubusercontent.com/57698887/119744931-47edee00-beb7-11eb-9d00-054610c87f8a.png)
 
 # Notes:
 OS Support: MacOS HighSierra and newer (Upto BigSur!). In the future I will continue maintaining this EFI.
