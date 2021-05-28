@@ -1070,7 +1070,7 @@
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
-			<true/>
+			<false/>
 			<key>LauncherOption</key>
 			<string>Disabled</string>
 			<key>LauncherPath</key>
@@ -1293,7 +1293,7 @@
 			<key>AdviseWindows</key>
 			<true/>
 			<key>MLB</key>
-			<string>C02827500J9HRPC1H</string>
+			<string></string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1307,9 +1307,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro14,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02TQZZDHV29</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>4F9868E4-FF31-4151-A9FB-D2FC9089CA0E</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
