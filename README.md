@@ -10,9 +10,9 @@ OpenCore EFI for Dell Inspriron 14 3467 (Intel Core i5-7200U - HD620)
 ![image](https://user-images.githubusercontent.com/57698887/119744931-47edee00-beb7-11eb-9d00-054610c87f8a.png)
 
 # Notes:
-OS Support: MacOS HighSierra and newer (Upto BigSur!). In the future I will continue maintaining this EFI.
+OS Support: MacOS HighSierra and newer (Upto Monterey!). In the future I will continue maintaining this EFI.
 
-Before using this efi, go [here](https://github.com/OpenIntelWireless/itlwm/releases/) and download appropriate AirportItlwm.kext with your macOS version to /OC/Kexts (you don't need to re-snapshot the config as AirportItlwm are included).
+Before using this efi, go [here](https://github.com/OpenIntelWireless/itlwm/releases/) and download appropriate AirportItlwm.kext with your macOS version to /OC/Kexts (you don't need to re-snapshot the config as AirportItlwm are included in config.plist).
 
 At the moment I'm using HDD 5400rpm which is really slow, so until I have a new SSD I won't upgrade to BigSur.
 
