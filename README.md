@@ -2,10 +2,10 @@
 OpenCore EFI for Dell Inspriron 14 3467 (Intel Core i5-7200U - HD620)
 | CPU | Intel Core I5 - 7200U |
 |:---:| :-:                   |
-| RAM | 4GB-DDR4              |
+| RAM | 8GB-DDR4              |
 | GPU | Intel HD 620 ~ 1500MB Vram|
-| Audio | Realtek ALC-256 (layout-id=21) |
-| Version | Opencore 0.6.9 |
+| Audio | Realtek ALC-256 (layout-id=21/alcid=21) |
+| Version | Opencore 1.0.5 |
 
 ![image](https://user-images.githubusercontent.com/57698887/119744931-47edee00-beb7-11eb-9d00-054610c87f8a.png)
 
@@ -16,7 +16,7 @@ Before using this efi, go [here](https://github.com/OpenIntelWireless/itlwm/rele
 
 Everything works except brightness hotkey (use Fn + S and Fn + B to change brightness, in VoodooPS2Controller brightness keys are f13 and f14).
 
-~~If you have problems with audio, use ALCPlugFix. Instead use ComboJack~~.Audio works with layout-id 21 without any workaround. Other option is update alcid=15.
+~~If you have problems with audio, use ALCPlugFix. Instead use ComboJack~~.Audio works with layout-id 21 without any workaround. Other option is update alcid=21 (NVRAM->Add).
 
 This EFI is only for Dell Inspiron 14 - 3467, if you are using dell laptop with the same specs, to the following [this](https://dortania.github.io/OpenCore-Post-Install/usb/) guide to repatch USB Port.
 
